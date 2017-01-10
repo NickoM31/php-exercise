@@ -23,7 +23,7 @@
 		}
 		
 	}
-	info(25,"chien");
+	info(25,"homme");
 
 	?>
 </body>
