@@ -7,10 +7,8 @@
 <body>
 	<h1>Array</h1>
 	<?php
-	$monthTab = array("02"=>"Aisne","59"=>"Nord","60"=>"Oise",
-		"62"=>"Pas-de-Calais","80"=>"Somme");
-
-	$monthTab["51"]="Marne";
+	$monthTab = array("janvier","février","mars","avril","mai","juin",
+		"juillet","aout","septembre","octobre","novembre","décembre");
 	
 	foreach ($monthTab as $key => $value) {
 		echo "<ul>$value</ul>";
