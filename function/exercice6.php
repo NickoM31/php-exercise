@@ -7,11 +7,13 @@
 <body>
 	<h1>Function</h1>
 	<?php
-function age($textUn = "J'\nai ", $age = '37',$textFin = " ans." ){
-			echo $textUn . $age . $textFin;
-}
+	function Bjr($nom  = "Michoux", $prenom = "Jean", $age = "86"){
+		echo "Bonjour " . $nom ." ". $prenom . ", tu as "  . $age . " ans.";
+	}
 
-age();
+	Bjr();
+
+
 	?>
 </body>
 </html>
