@@ -9,7 +9,7 @@
 	<?php 
 	if (empty($_POST)){
 		?>
-		<form action="form.php" method="Post">
+		<form action="form.php" method="Post" enctype="multipart/form-data">
 			<select name="choix" id="">
 				<option value="madame">Mme</option>
 				<option value="monsieur">Mr</option>
