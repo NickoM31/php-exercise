@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,11 +7,13 @@
 </head>
 <body>
 	<h1>formulaire</h1>
-	<?php 
-	if (empty($_POST)){
+	<?php  
+	$extensionValide = ".pdf";
+	$extension_upload =strrchr($_FILES['upload']['name'], '.')  ;
+	if (empty($_POST) || $extensionValide !== $extension_upload ){
 		?>
 		<form action="form.php" method="Post" enctype="multipart/form-data">
-			<select name="choix" id="">
+			<select name="choix" id="choix">
 				<option></option>
 				<option value="madame">Mme</option>
 				<option value="monsieur">Mr</option>
@@ -20,13 +23,12 @@
 			<label for="nom">Nom</label>
 			<input type="text" name="nom" id="nom" placeholder="Votre nom">
 			<input type="file" name="upload">
-			<input type="submit" name="valider">
+			<input type="submit">
 		</form>
-		<?php
+		<?php 
 	}else{
 		echo $_FILES["upload"]["name"] ." ". "Bienvenue " . $_POST["choix"] ." ". $_POST["prenom"] ." ". $_POST["nom"] . "!";
 	}
-	
 	?>
 
 </body>
