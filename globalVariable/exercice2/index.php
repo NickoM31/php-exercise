@@ -8,12 +8,13 @@ $_SESSION["age"] = '37';
 <head>
 	<meta charset="UTF-8">
 	<title>Exercice 2</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-	<h1>globalVariable</h1>
+	<h1>Variable Globale</h1>
 
-	<a href="user.php?nom=nom&prenom=prenom&age=age ">Lien</a>
+	<a href="user.php?nom=nom&prenom=prenom&age=age ">User</a>
 
 
 	<?php
