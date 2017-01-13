@@ -13,7 +13,7 @@ $_SESSION["age"] = '37';
 
 	<h1>globalVariable</h1>
 
-	<a href="user.php?nom=nom&prenom=prenom&age=age ">Lien</a>
+	<a href="user.php">Lien</a>
 
 
 	<?php

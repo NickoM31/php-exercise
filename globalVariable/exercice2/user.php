@@ -8,7 +8,7 @@
 </head>
 <body>
 	
-<span>Je me souviens de toi ! Tu t'appelles <?php echo $_SESSION['prenom'] . ' ' . $_SESSION['nom'] ; ?> et tu as <?php echo $_SESSION["age"] ?> ans.</span>
+<span>Je me souviens de toi ! Tu t'appelles <?php echo $_SESSION['prenom'] . ' ' . $_SESSION['nom'] ; ?> et tu as <?php echo $_SESSION["age"] ?> ans!</span>
 
 	<a href="index.php">Home</a>
 </body>
