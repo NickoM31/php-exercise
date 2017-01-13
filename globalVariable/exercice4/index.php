@@ -1,10 +1,10 @@
 <?php 
 
-if (isset($_POST["pseudo"]) && isset($_POST["password"])) {
-	setcookie("pseudo", $_POST["pseudo"], time() + 365*24*3600, null, null, false, true);
+
+	setcookie("login", $_POST["login"], time() + 365*24*3600, null, null, false, true);
 	setcookie("password", $_POST["password"], time() + 365*24*3600, null, null, false, true);
 	header("Location : form.php");
-}
+
 ?>
 
 <!DOCTYPE html>

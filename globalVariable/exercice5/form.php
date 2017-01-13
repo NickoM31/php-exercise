@@ -1,10 +1,10 @@
 <?php 
 
-
-	setcookie("login", $_POST["login"], time() + 365*24*3600, null, null, false, true);
+if (isset($_POST["pseudo"]) && isset($_POST["password"])) {
+	setcookie("pseudo", $_POST["pseudo"], time() + 365*24*3600, null, null, false, true);
 	setcookie("password", $_POST["password"], time() + 365*24*3600, null, null, false, true);
 	header("Location : form.php");
-
+}
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +16,7 @@
 <body>
 	<h1>Variable Globale</h1>
 
-	<form action="#" method="post">
+	<form action="cookie.php" method="post">
 		<label for="login">Login</label>
 		<input type="text" name="login">
 		<label for="password">Password</label>
