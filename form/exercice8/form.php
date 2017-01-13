@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -11,7 +12,6 @@
 	$extension_upload =strrchr($_FILES['upload']['name'], '.')  ;
 	if (empty($_POST) || $extensionValide !== $extension_upload ){
 		?>
-		
 		<form action="form.php" method="Post" enctype="multipart/form-data">
 			<select name="choix" id="choix">
 				<option></option>
@@ -27,7 +27,6 @@
 		</form>
 		<?php 
 	}else{
-		
 		echo $_FILES["upload"]["name"] ." ". "Bienvenue " . $_POST["choix"] ." ". $_POST["prenom"] ." ". $_POST["nom"] . "!";
 	}
 	?>
