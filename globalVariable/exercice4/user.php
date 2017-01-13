@@ -9,7 +9,7 @@
 		<h1>Vous êtes connecté</h1>
 	</div>
 	<div>
-		<?php echo "Le login est : " . $_POST["login"] . " " ." et le mot de passe est : ". $_POST["password"];?>
+		<?php echo "Le login est : " . $_COOKIE["login"] . " " ." et le mot de passe est : ". $_COOKIE["password"];?>
 	</div>
 </body>
 </html>
